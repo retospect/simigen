@@ -82,6 +82,10 @@ pylint:
 	$(RUN_DOCK) "cd ~/$(MODULE_NAME)/module \
 		&& pylint --rcfile=../.pylintrc * -f parseable"
 
+.PHONY: test
+test:
+	pytest -vv test/*test.py
+
 .PHONY: upload
 upload:
 	$(RUN_DOCK) "twine upload ~/$(MODULE_NAME)/dist/$(MODULE_NAME)-$(MODULE_VERSION)*"
