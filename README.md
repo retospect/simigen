@@ -1,3 +1,3 @@
 # README
 
-![tests](https://github.com/github/retospect/simigen/workflows/ci.yml/badge.svg)
+![tests](https://github.com/retospect/simigen/actions/workflows/ci.yml/badge.svg)
